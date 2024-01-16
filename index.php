@@ -1,9 +1,10 @@
 <?php
 
-require_once __DIR__.'/models/child.php';
+require_once __DIR__.'/models/parent.php';
 
-$trial = new Category('baby feed','5');
+$cat = new Category('baby feed','5','Dog');
+$prod = new Product('fluffy toy','3');
 
-$trial ->Echo();
 
- var_dump($trial);
+
+ var_dump($cat);

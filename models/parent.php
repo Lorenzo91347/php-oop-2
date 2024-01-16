@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__.'/child.php';
 
 class Product{
     public $name;
@@ -15,4 +16,4 @@ class Product{
     public function Echo(){
         echo 'hello';
     }
-}
+};

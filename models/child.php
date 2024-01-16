@@ -1,14 +1,15 @@
 <?php
 
-require_once __DIR__.'/models/parent.php';
+
 
 class Category extends Product{
     public $category;
 
-    public function __construct($_category)
+    public function __construct($_name,$_available,$_category)
     {
+        parent::__construct($_name,$_available);
         $this->category = $_category;
         
     }
-}
+};
 
