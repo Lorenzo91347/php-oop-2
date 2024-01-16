@@ -11,5 +11,9 @@ class Category extends Product{
         $this->category = $_category;
         
     }
+    public function Cat(){
+        
+    }
+
 };
 
