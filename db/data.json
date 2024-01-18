@@ -1,0 +1,32 @@
+[
+    {
+        "name":"baby feed",
+        "quantity":6,
+        "category":"dog",
+        "availability":false    
+    },
+    {
+        "name":"fluffy toy",
+        "quantity":1,
+        "category":"cat",
+        "availability":true    
+    },
+    {
+        "name":"food bowl",
+        "quantity":4,
+        "category":"dog",
+        "availability":true    
+    },
+    {
+        "name":"scratching post",
+        "quantity":2,
+        "category":"cat",
+        "availability":false    
+    },
+    {
+        "name":"catnip bag",
+        "quantity":5,
+        "category":"cat",
+        "availability":true    
+    }
+]

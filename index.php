@@ -1,17 +1,22 @@
 <?php
+require_once __DIR__."/models/product.php";
 
-require_once __DIR__.'/models/parent.php';
+$toy = new Type('Toy');
+$food = new Type('Food');
 
-$prod1 = new Category('baby feed','6','Dog','false');
-$prod2 = new Category('fluffy toy','1','Cat','true');
-$prod3 = new Category('food bowl','4','Dog','true');
-$prod4 = new Category('scratching post','2','Cat','false');
-$prod5 = new Category('catnip bag','5','Cat','true');
+$cat = new Category('Cat');
+$dog = new Category('Dog');
+
+$prod1 = new Product('Red Ball','yes', 50 , 6,$dog,$toy);
+$prod2 = new Product('Cat Food','no', 60 , 2,$cat,$food);
+
+var_dump($prod1,$prod2)
 
 
 
 
- //var_dump($prod1,$prod2,$prod3,$prod4,$prod5);
+
+
  ?>
 
  <!DOCTYPE html>
@@ -22,26 +27,7 @@ $prod5 = new Category('catnip bag','5','Cat','true');
     <title>Php Pet Products</title>
  </head>
  <body>
-    <ul><?php foreach ($prod1 as $key => $value):?> 
-        <li><?php echo $value?></li>
-        <?php endforeach;?>
-    </ul>
-    <ul><?php foreach ($prod2 as $key => $value):?> 
-        <li><?php echo $value?></li>
-        <?php endforeach;?>
-    </ul>
-    <ul><?php foreach ($prod3 as $key => $value):?> 
-        <li><?php echo $value?></li>
-        <?php endforeach;?>
-    </ul>
-    <ul><?php foreach ($prod4 as $key => $value):?> 
-        <li><?php echo $value?></li>
-        <?php endforeach;?>
-    </ul>
-    <ul><?php foreach ($prod5 as $key => $value):?> 
-        <li><?php echo $value?></li>
-        <?php endforeach;?>
-    </ul>
+   
     
  </body>
  </html>
