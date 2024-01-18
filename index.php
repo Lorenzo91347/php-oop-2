@@ -1,5 +1,7 @@
 <?php
 require_once __DIR__."/models/product.php";
+require_once __DIR__."/models/category.php";
+require_once __DIR__."/models/type.php";
 
 $toy = new Type('Toy');
 $food = new Type('Food');

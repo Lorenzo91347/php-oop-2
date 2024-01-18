@@ -1,6 +1,5 @@
 <?php
-require_once __DIR__."/models/category.php";
-require_once __DIR__."/models/type.php";
+
 
 
 class Product{
